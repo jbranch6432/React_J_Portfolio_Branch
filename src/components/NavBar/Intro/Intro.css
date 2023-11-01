@@ -1,0 +1,72 @@
+#intro {
+    height: calc(100vh - 10rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.hs {
+    position: absolute;
+    top: 7rem;
+    left:50vw;
+    z-index: -1;
+    object-fit: cover;
+    height: 40vh;
+    border-radius: 50%;
+}
+
+.introContent {
+    height:10vh;
+    width: 200vh;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.hello {
+    font-size: 1.75rem;
+    font-weight: 300;
+}
+
+.introName {
+    color: rgb(72, 125, 78)
+}
+
+.descrMe {
+    font-size: large;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+}
+
+.btn {
+    background-color: white;
+    margin: 1rem 0;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:1023px) {
+    .hs {
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width: 945px) {
+    .introContent {
+        height:100vh;
+        width: 200vh;
+        padding: 2rem;
+        font-size: 2rem;
+        font-weight: 300;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+}
